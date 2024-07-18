@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing</title>
+    </head>
+    <body>
+        <script>
+            function val() {
+                var anss = document.getElementById("answerr").value;
+                if(anss === "yes"){
+                    window.location.href = "new.html";
+                }
+                if(anss === "no"){
+                    window.location.href = "new2.html";
+                }
+            }
+        </script>
+        <p>Answer?</p>
+        <select id="answerr">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <button type="button" onclick="val()">Submit</button>
+    </body>
+</html>
